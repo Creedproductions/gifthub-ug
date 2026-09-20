@@ -1,4 +1,4 @@
-# Kin & Kind image sources
+# GiftHub UG image sources
 
 Each catalogue product has its own distinct image. Images were selected by subject from Unsplash and downloaded at a consistent 4:3 crop for the storefront.
 
