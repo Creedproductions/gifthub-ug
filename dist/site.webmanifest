@@ -1,0 +1,23 @@
+{
+  "name": "GiftHub UG",
+  "short_name": "GiftHub UG",
+  "description": "Thoughtful gifts and delivery in Kampala, Uganda.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f0e6",
+  "theme_color": "#07382b",
+  "icons": [
+    {
+      "src": "assets/gifthub-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/gifthub-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
