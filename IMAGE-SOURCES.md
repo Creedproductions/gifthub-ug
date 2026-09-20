@@ -68,6 +68,19 @@ Each catalogue product has its own distinct image. Images were selected by subje
 
 ## Original generated catalogue photography
 
+The following original product images were created with OpenAI image generation for the GiftHub UG catalogue. Each uses a separate arrangement, flower type and composition so the storefront does not repeat photography.
+
+| Product image | Original subject |
+|---|---|
+| daisy-daylight-bouquet | White and yellow daisy bouquet in forest-green and cream wrap |
+| sunflower-smile-bouquet | Sunflower and eucalyptus bouquet in a warm Kampala-inspired interior |
+| lily-grace-vase | White lilies and greenery in a hammered gold vase |
+| kampala-money-bouquet | Red rose money bouquet with decorative Ugandan-shilling-inspired notes |
+| tulip-whisper-bouquet | Blush and ivory tulip bouquet with green ribbon |
+| orchid-luxe-box | Purple and white orchids in a burgundy hatbox |
+| carnation-colour-burst | Coral, pink and white carnation bouquet |
+| babys-breath-cloud | Baby’s breath, blush roses and eucalyptus bouquet |
+
 The following product images were created specifically for GiftHub UG using OpenAI image generation. They are distinct original assets and do not reuse third-party catalogue photography.
 
 - Rose & Scent Signature
