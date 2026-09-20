@@ -75,3 +75,9 @@ The following product images were created specifically for GiftHub UG using Open
 - Restore Self-care Hamper
 - Kampala Coffee & Tea Duo
 - The Ultimate Celebration
+- Tabletop Photo Board
+- Gallery Memory Board
+- Signature Wooden Clock
+- Wood Watch Gift Box
+- Personalised Notebook Set
+- Frame & Notes From the Heart
