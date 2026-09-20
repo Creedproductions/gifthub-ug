@@ -1,167 +1,60 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#2b0c20">
-  <meta name="description" content="Curated gifts, flowers and hampers, thoughtfully packed and delivered across Kampala.">
-  <title>Kin &amp; Kind — Gifts worth giving</title>
-  <link rel="stylesheet" href="./styles.css">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07382b"><meta name="description" content="Flowers, cakes and complete gift packages for every occasion, delivered across Kampala.">
+  <title>Kin &amp; Kind — Kampala's occasion gift shop</title><link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="announcement">Same-day Kampala delivery on orders placed before 2 PM</div>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Kin and Kind home">
-      <span class="brand-mark" aria-hidden="true">K<span>&amp;</span>K</span>
-      <span class="brand-copy"><strong>Kin &amp; Kind</strong><small>Gifts worth giving</small></span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="#shop">Shop</a>
-      <a href="#delivery">Delivery</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="bag-button" id="openBag" type="button" aria-controls="bagDrawer" aria-expanded="false">
-      Bag <span id="bagCount">0</span>
-    </button>
-  </header>
-
-  <main id="top">
-    <section class="hero" aria-labelledby="heroTitle">
-      <div class="hero-copy">
-        <p class="eyebrow">Curated in Kampala · delivered with care</p>
-        <h1 id="heroTitle">Make their day<br><em>feel chosen.</em></h1>
-        <p class="hero-intro">Beautiful gifts for birthdays, thank-yous, milestones and the moments that don’t need a reason.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#shop">Find a gift</a>
-          <a class="text-link" href="#delivery">How delivery works <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="hero-proof" aria-label="Service highlights">
-          <div><strong>8</strong><span>curated gifts</span></div>
-          <div><strong>6</strong><span>gift categories</span></div>
-          <div><strong>1 day</strong><span>delivery available</span></div>
-        </div>
+<body data-page="home">
+  <div id="siteHeader"></div>
+  <main>
+    <section class="home-hero shell">
+      <div class="hero-panel">
+        <p class="kicker">Kampala’s occasion gift shop</p>
+        <h1>Every feeling<br>has a <em>gift.</em></h1>
+        <p>Flowers, cakes and thoughtful packages for life’s big moments—and the little ones that matter just as much.</p>
+        <div class="hero-actions"><a class="btn btn-orange" href="occasions.html">Shop by occasion</a><a class="btn btn-ghost" href="shop.html">View all gifts</a></div>
+        <div class="hero-points"><span>✓ Same-day options</span><span>✓ Personal gift notes</span><span>✓ Kampala delivery</span></div>
       </div>
-      <div class="hero-image" role="img" aria-label="A plum gift box, flowers, candle and handcrafted basket styled on a dark backdrop">
-        <div class="image-caption"><span>01</span> The Kin &amp; Kind edit</div>
+      <div class="hero-photo"><img src="assets/kin-kind-still-life.png" alt="Curated gift box, flowers, candle and handcrafted basket"><div class="hero-badge"><strong>From</strong><span>UGX 45K</span></div></div>
+    </section>
+
+    <section class="service-strip shell" aria-label="Service promises">
+      <div><b>✦</b><span><strong>Made for the moment</strong><small>Curated by occasion</small></span></div>
+      <div><b>♢</b><span><strong>Fresh &amp; beautifully packed</strong><small>Flowers and cakes prepared with care</small></span></div>
+      <div><b>⌁</b><span><strong>Reliable delivery</strong><small>Kampala, Wakiso &amp; Entebbe</small></span></div>
+      <div><b>◉</b><span><strong>Order on WhatsApp</strong><small>Simple confirmation and support</small></span></div>
+    </section>
+
+    <section class="section shell">
+      <div class="section-head center"><p class="kicker">Find the right feeling</p><h2>Shop by occasion</h2><p>Start with the moment. We’ll help with the rest.</p></div>
+      <div class="occasion-grid">
+        <a class="occasion-card wide" href="occasions.html#birthday"><img src="assets/catalog/birthday-cake.jpg" alt="Birthday cake with lit candles"><span><small>Joy, wrapped up</small><strong>Birthdays</strong></span></a>
+        <a class="occasion-card" href="occasions.html#graduation"><img src="assets/catalog/graduation.jpg" alt="Graduate holding flowers"><span><small>A proud moment</small><strong>Graduation</strong></span></a>
+        <a class="occasion-card" href="occasions.html#new-baby"><img src="assets/catalog/newborn.jpg" alt="Newborn baby sleeping among flowers"><span><small>Hello, little one</small><strong>Child birth</strong></span></a>
+        <a class="occasion-card" href="occasions.html#apology"><img src="assets/catalog/roses.jpg" alt="A bouquet of red roses"><span><small>Say it sincerely</small><strong>Apology</strong></span></a>
+        <a class="occasion-card wide" href="occasions.html#christmas"><img src="assets/catalog/christmas.jpg" alt="Wrapped Christmas gifts"><span><small>Share the season</small><strong>Christmas &amp; end of year</strong></span></a>
       </div>
     </section>
 
-    <section class="shop-section" id="shop" aria-labelledby="shopTitle">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">The gift edit</p>
-          <h2 id="shopTitle">Something for every kind of person.</h2>
-        </div>
-        <p>Choose a gift, make it personal, then add as many as you like to your bag.</p>
-      </div>
-      <div class="filter-row" id="filters" aria-label="Filter gifts by category"></div>
-      <div class="product-grid" id="productGrid" aria-live="polite"></div>
-      <p class="empty-state" id="emptyState" hidden>No gifts match this category yet.</p>
-    </section>
+    <section class="green-section"><div class="section shell">
+      <div class="section-head inverse"><div><p class="kicker">Popular right now</p><h2>Gifts people love receiving</h2></div><a href="shop.html">Shop all gifts →</a></div>
+      <div class="product-grid" data-product-list="featured"></div>
+    </div></section>
 
-    <section class="delivery-section" id="delivery" aria-labelledby="deliveryTitle">
-      <div class="delivery-copy">
-        <p class="eyebrow light">Delivery, made simple</p>
-        <h2 id="deliveryTitle">From our table<br>to their door.</h2>
-        <p>We hand-pack every order and call the recipient before delivery—unless you ask us to keep the surprise.</p>
-        <div class="delivery-note"><span>Order by 2 PM</span><strong>Same-day in Kampala</strong></div>
-      </div>
-      <div class="delivery-zones" aria-label="Delivery prices">
-        <div class="zone"><span>Central Kampala</span><strong>UGX 8,000</strong></div>
-        <div class="zone"><span>Greater Kampala</span><strong>UGX 12,000</strong></div>
-        <div class="zone"><span>Wakiso</span><strong>UGX 20,000</strong></div>
-        <div class="zone"><span>Entebbe</span><strong>UGX 25,000</strong></div>
-        <div class="zone"><span>Beyond these areas</span><strong>Ask for a quote</strong></div>
+    <section class="section shell package-section">
+      <div class="package-copy"><p class="kicker">Three easy sizes</p><h2>A thoughtful gift at every budget.</h2><p>Every product can be made Simple, Signature or Grand. Choose the size when you add it to your bag.</p><a class="text-link" href="shop.html">Browse all gift packages →</a></div>
+      <div class="package-cards">
+        <article><span>01</span><h3>Simple</h3><p>A polished, personal gesture with our signature wrap and card.</p><strong>From UGX 45,000</strong></article>
+        <article class="featured-package"><span>02 · most chosen</span><h3>Signature</h3><p>A fuller arrangement with keepsake packaging and added treats.</p><strong>From UGX 80,000</strong></article>
+        <article><span>03</span><h3>Grand</h3><p>A generous showpiece for milestones and unforgettable surprises.</p><strong>From UGX 125,000</strong></article>
       </div>
     </section>
 
-    <section class="contact-section" id="contact">
-      <p class="eyebrow">Need a hand?</p>
-      <h2>Tell us who you’re celebrating.</h2>
-      <p>We’ll help you choose, combine or customise a gift for the moment.</p>
-      <a class="button button-dark" id="contactWhatsapp" href="https://wa.me/?text=Hello%20Kin%20%26%20Kind%2C%20I%27d%20like%20help%20choosing%20a%20gift." target="_blank" rel="noopener">Chat on WhatsApp</a>
+    <section class="split-promo shell">
+      <div class="promo-photo"><img src="assets/catalog/cake-flowers.jpg" alt="Celebration cake surrounded by flowers"></div>
+      <div class="promo-copy"><p class="kicker">The perfect pair</p><h2>Fresh flowers.<br>Beautiful cakes.</h2><p>Send both together and make the celebration feel complete. Choose your cake flavour and bouquet size before checkout.</p><div><a class="btn btn-orange" href="flowers.html">Shop flowers</a><a class="btn btn-light" href="cakes.html">Shop cakes</a></div></div>
     </section>
   </main>
-
-  <footer>
-    <a class="brand brand-footer" href="#top"><span class="brand-mark">K<span>&amp;</span>K</span><span class="brand-copy"><strong>Kin &amp; Kind</strong><small>Kampala, Uganda</small></span></a>
-    <p>Curated gifts · thoughtful packaging · doorstep delivery</p>
-    <p>© <span id="year"></span> Kin &amp; Kind</p>
-  </footer>
-
-  <div class="overlay" id="overlay" hidden></div>
-
-  <section class="drawer" id="productDrawer" role="dialog" aria-modal="true" aria-labelledby="productName" hidden>
-    <button class="icon-button close-drawer" data-close type="button" aria-label="Close gift details">×</button>
-    <div class="drawer-media" id="productMedia"></div>
-    <div class="drawer-content">
-      <p class="eyebrow" id="productCategory"></p>
-      <h2 id="productName"></h2>
-      <p class="drawer-price" id="productPrice"></p>
-      <p id="productDescription"></p>
-      <form id="productForm">
-        <label>Presentation
-          <select id="wrapOption">
-            <option value="Signature wrap">Signature wrap — included</option>
-            <option value="Keepsake box">Keepsake box — + UGX 12,000</option>
-          </select>
-        </label>
-        <label>Gift message <span>optional</span>
-          <textarea id="giftMessage" rows="3" maxlength="140" placeholder="Write a short note for the card"></textarea>
-        </label>
-        <button class="button button-primary full" type="submit">Add to bag · <span id="productSubmitPrice"></span></button>
-      </form>
-    </div>
-  </section>
-
-  <aside class="bag-drawer" id="bagDrawer" aria-labelledby="bagTitle" hidden>
-    <div class="bag-header">
-      <div><p class="eyebrow">Your order</p><h2 id="bagTitle">Gift bag</h2></div>
-      <button class="icon-button" data-close type="button" aria-label="Close bag">×</button>
-    </div>
-    <div id="bagItems" class="bag-items"></div>
-    <div class="bag-empty" id="bagEmpty">
-      <span aria-hidden="true">◇</span>
-      <h3>Your bag is waiting</h3>
-      <p>Add a thoughtful gift and it’ll appear here.</p>
-      <button class="text-button" data-close type="button">Keep browsing</button>
-    </div>
-    <div class="bag-checkout" id="bagCheckout" hidden>
-      <form id="checkoutForm">
-        <h3>Delivery details</h3>
-        <div class="field-pair">
-          <label>Your name<input name="customerName" autocomplete="name" required></label>
-          <label>Your phone<input name="customerPhone" autocomplete="tel" inputmode="tel" required></label>
-        </div>
-        <div class="field-pair">
-          <label>Recipient’s name<input name="recipientName" required></label>
-          <label>Recipient’s phone<input name="recipientPhone" inputmode="tel" required></label>
-        </div>
-        <label>Delivery area
-          <select name="zone" id="deliveryZone" required>
-            <option value="">Choose an area</option>
-            <option value="Central Kampala" data-fee="8000">Central Kampala — UGX 8,000</option>
-            <option value="Greater Kampala" data-fee="12000">Greater Kampala — UGX 12,000</option>
-            <option value="Wakiso" data-fee="20000">Wakiso — UGX 20,000</option>
-            <option value="Entebbe" data-fee="25000">Entebbe — UGX 25,000</option>
-            <option value="Other area" data-fee="0">Other area — delivery quote needed</option>
-          </select>
-        </label>
-        <label>Address &amp; landmark<textarea name="address" rows="2" required></textarea></label>
-        <label>Preferred delivery date<input name="date" type="date" id="deliveryDate" required></label>
-        <label class="check-label"><input name="surprise" type="checkbox"> Keep it a surprise—contact me first</label>
-        <div class="totals">
-          <div><span>Gifts</span><span id="subtotal">UGX 0</span></div>
-          <div><span>Delivery</span><span id="deliveryFee">Choose area</span></div>
-          <div class="total"><strong>Total</strong><strong id="total">UGX 0</strong></div>
-        </div>
-        <button class="button button-whatsapp full" type="submit">Send order on WhatsApp</button>
-        <p class="checkout-note">Your order opens as a ready-to-send WhatsApp message. We’ll confirm availability and payment.</p>
-      </form>
-    </div>
-  </aside>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="./app.js"></script>
-</body>
-</html>
+  <div id="siteFooter"></div><div id="storeUi"></div><script src="app.js"></script>
+</body></html>
