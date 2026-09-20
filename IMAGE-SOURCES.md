@@ -81,3 +81,19 @@ The following product images were created specifically for GiftHub UG using Open
 - Wood Watch Gift Box
 - Personalised Notebook Set
 - Frame & Notes From the Heart
+- Everyday Glow Skincare Box
+- Gentleman Skin & Grooming Box
+- Rechargeable Comfort Heat Belt
+- Period Comfort Care Box
+- Phone Essentials Gift Box
+- Smartphone Upgrade Gift
+- Smartphone Creator Kit
+- Travel Tech Hamper
+- Signature Jewellery Box
+- Engraved Bracelet & Rose
+- Together Jewellery Set
+- Church Thanksgiving Hamper
+- Church Leader Appreciation Box
+- Romantic Room Surprise
+- Birthday Room Styling
+- Proposal Room Experience
