@@ -1,5 +1,7 @@
 # GiftHub UG image sources
 
+- `dist/assets/gifthub-ug-logo-v1.png` — original logo generated for GiftHub UG with OpenAI image generation.
+
 Each catalogue product has its own distinct image. Images were selected by subject from Unsplash and downloaded at a consistent 4:3 crop for the storefront.
 
 ## Product catalogue
