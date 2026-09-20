@@ -64,3 +64,14 @@ Each catalogue product has its own distinct image. Images were selected by subje
 | Gift concierge editorial | Muhamad Izzul Isyraf bin Mohd Radzi | [View photo](https://unsplash.com/photos/chocolate-bars-and-flowers-arranged-in-a-white-bag-Y79fHiO1zOI) |
 | Flowers page editorial | Alisa Anton | [View photo](https://unsplash.com/photos/pink-flowers-in-gray-steel-bucket-D4Blldtly00) |
 | Occasions page editorial | Kira auf der Heide | [View photo](https://unsplash.com/photos/person-showing-brown-gift-box-IPx7J1n_xUc) |
+
+## Original generated catalogue photography
+
+The following product images were created specifically for GiftHub UG using OpenAI image generation. They are distinct original assets and do not reuse third-party catalogue photography.
+
+- Rose & Scent Signature
+- Gentleman Scent Box
+- Scent & Bloom Celebration
+- Restore Self-care Hamper
+- Kampala Coffee & Tea Duo
+- The Ultimate Celebration

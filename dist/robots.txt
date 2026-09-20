@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kin-and-kind-gifts-ug.napsterphantom.chatgpt.site/sitemap.xml
+Sitemap: https://gifthubug.creedmotions.store/sitemap.xml
