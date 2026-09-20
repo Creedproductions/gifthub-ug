@@ -47,6 +47,7 @@ const products = [
   {id:'client-harvest',name:'Client Harvest Basket',category:'Corporate',occasion:'End of year',recipient:'Client',price:215000,image:IMG+'fruit-basket.jpg',tag:'Client gifting',desc:'Fresh fruit, premium treats and a branded appreciation card.',choice:'Branding',options:['Company colours','Logo card','Minimal wrap']},
   {id:'vip-client',name:'VIP Client Collection',category:'Corporate',occasion:'End of year',recipient:'Client',price:380000,image:IMG+'luxe-hamper.jpg',tag:'Luxury',desc:'An abundant branded hamper with treats, drinkware and keepsakes.',choice:'Branding',options:['Company colours','Logo card','Executive minimal']}
 ];
+products.forEach(product => { product.image = `assets/products/${product.id}.jpg`; });
 
 const occasionCopy = {
   'Birthday':'Joyful cakes, bright flowers and a little extra sparkle.',
