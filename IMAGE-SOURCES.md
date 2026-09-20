@@ -80,6 +80,12 @@ The following original product images were created with OpenAI image generation 
 | orchid-luxe-box | Purple and white orchids in a burgundy hatbox |
 | carnation-colour-burst | Coral, pink and white carnation bouquet |
 | babys-breath-cloud | Baby’s breath, blush roses and eucalyptus bouquet |
+| cash-popup-box | Forest-green and coral pop-up cash box with chocolates and flowers |
+| money-pull-cake | Coral celebration cake with a hygienically sleeved cash reveal |
+| prosperity-money-frame | Walnut floral shadow-box frame with rolled cash sleeves |
+| balloon-cash-surprise | Bubble-balloon cash reveal in a forest-green gift box |
+| graduation-cash-fan | Graduation cap and certificate with a wide cash fan arrangement |
+| cash-rose-heart-box | Velvet heart box with roses, chocolates and rolled cash sleeves |
 
 The following product images were created specifically for GiftHub UG using OpenAI image generation. They are distinct original assets and do not reuse third-party catalogue photography.
 
