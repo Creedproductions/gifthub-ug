@@ -40,6 +40,11 @@ img { display: block; max-width: 100%; }
 a { color: inherit; }
 .shell { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
 
+.crawl-nav { min-height: 58px; padding: 12px max(20px, calc((100% - 1180px) / 2)); display: flex; align-items: center; gap: 18px; overflow-x: auto; background: var(--paper); border-bottom: 1px solid var(--line); white-space: nowrap; }
+.crawl-nav a { color: var(--ink); font-size: .82rem; font-weight: 800; text-decoration: none; }
+.crawl-nav a:first-child { margin-right: auto; color: var(--green-2); font-family: "Manrope", ui-sans-serif, sans-serif; font-size: 1.05rem; }
+.crawl-nav a:hover { color: var(--orange); }
+
 .utility-bar { background: var(--green); color: #fff; min-height: 38px; }
 .utility-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; min-height: 38px; font-size: .76rem; }
 .utility-inner span { display: flex; align-items: center; gap: 8px; }
