@@ -8,6 +8,10 @@ ROOT = File.expand_path("..", __dir__)
 DIST = File.join(ROOT, "dist")
 APP = File.read(File.join(DIST, "app.js"))
 BASE_URL = "https://gifthubug.creedmotions.store"
+RETURN_POLICY_ID = "#{BASE_URL}/refund-policy#merchant-return-policy"
+SHIPPING_SERVICE_ID = "#{BASE_URL}/contact#shipping-policy"
+NON_RETURNABLE_CATEGORIES = ["Flowers", "Cakes", "Personalised", "Skincare", "Perfumes", "Food & Treats", "Hampers", "Money Gifts", "Thanksgiving", "Corporate"].freeze
+NON_RETURNABLE_IDS = ["personalised-bracelet"].freeze
 
 def value(line, key)
   match = line.match(/(?:\{|,)#{Regexp.escape(key)}:'([^']*)'/)
@@ -44,6 +48,19 @@ products.each do |product|
   url = "#{BASE_URL}/products/#{product[:id]}"
   image = "#{BASE_URL}/assets/products/#{product[:id]}.jpg"
   schema_type = product[:category] == "Room Styling" ? "Service" : "Product"
+  return_policy = if NON_RETURNABLE_CATEGORIES.include?(product[:category]) || NON_RETURNABLE_IDS.include?(product[:id])
+    {
+      "@type" => "MerchantReturnPolicy",
+      "applicableCountry" => "UG",
+      "returnPolicyCategory" => "https://schema.org/MerchantReturnNotPermitted"
+    }
+  else
+    { "@id" => RETURN_POLICY_ID }
+  end
+  shipping_details = {
+    "@type" => "OfferShippingDetails",
+    "hasShippingService" => { "@id" => SHIPPING_SERVICE_ID }
+  }
   schema = if schema_type == "Service"
     {
       "@context" => "https://schema.org",
@@ -75,7 +92,9 @@ products.each do |product|
         "priceCurrency" => "UGX",
         "availability" => "https://schema.org/InStock",
         "itemCondition" => "https://schema.org/NewCondition",
-        "seller" => { "@type" => "Organization", "name" => "GiftHub UG", "url" => BASE_URL }
+        "seller" => { "@type" => "Organization", "name" => "GiftHub UG", "url" => BASE_URL },
+        "shippingDetails" => shipping_details,
+        "hasMerchantReturnPolicy" => return_policy
       }
     }
   end
@@ -170,7 +189,7 @@ sitemap_path = File.join(DIST, "sitemap.xml")
 sitemap = File.read(sitemap_path).sub(%r{</urlset>\s*\z}, "")
 sitemap = sitemap.gsub(/\n\s*<url><loc>#{Regexp.escape(BASE_URL)}\/products\/.*?<\/url>/, "")
 product_urls = products.map do |product|
-  "  <url><loc>#{BASE_URL}/products/#{product[:id]}</loc><lastmod>2026-10-01</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>"
+  "  <url><loc>#{BASE_URL}/products/#{product[:id]}</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>"
 end.join("\n")
 File.write(sitemap_path, "#{sitemap.rstrip}\n#{product_urls}\n</urlset>\n")
 
